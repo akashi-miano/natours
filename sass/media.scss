@@ -1,0 +1,222 @@
+@media (max-width: 1250px) {
+	// booking
+
+	.booking {
+
+		padding: 3rem;
+		&__wrapper {
+			grid-template-columns: 1fr;
+		}
+		&__img {
+			display: none;
+		}
+
+		&__form  {
+			width: 85%;
+			margin: 0 auto;
+		}
+	}
+}
+
+@media (max-width: 1200px) {
+
+	// features
+	.advices  {
+
+	padding: 3rem;
+	&__cards{
+		grid-template-columns: repeat(2, minmax(auto, 1fr));
+	}
+
+
+		
+	}
+
+	// tours
+	.p-tours  {
+		.p-tours__wrapper {
+			grid-template-columns: 1fr; 
+			gap: 2.25rem;
+			justify-items: center;
+
+			.card-wrapper  {
+				perspective: 1500px
+			}
+		}
+	}
+
+		.tours {
+			padding-bottom: 35rem !important;
+			padding: 3rem;
+
+			&__desc {
+				max-width: 650px;
+			}
+		}
+
+
+
+		.btn--green  {
+			align-self: center;
+			grid-column: 1 !important;
+			width: fit-content !important;
+		}
+	
+
+	// stories
+	.stories {
+		.story__content-wrapper {
+			grid-template-columns: 1fr;
+			justify-items: center;
+			text-align: center;
+		}
+
+	}
+
+
+@media (max-width: 950px) {
+	
+	//footer
+
+	.footer {
+		
+		&__grid {
+			grid-template-columns: 1fr;
+			justify-items: center;
+		}
+
+
+		&__list {
+			flex-direction: column;
+			border-top: 0 !important;
+		}
+		li  {
+			padding-top: 2rem;
+		}
+
+	}
+}
+
+@media (max-width: 750px) {
+
+	//hero
+	.hero  {
+
+		&__title {
+			letter-spacing: 1rem !important;
+			font-size: 2.5rem;
+		
+		}
+
+		&__sub-title {
+			letter-spacing: .5rem !important;
+		}
+	}
+
+	// features
+	.advices  {
+
+	padding: 5rem 1.5rem;
+	&__cards{
+		grid-template-columns: 1fr;
+	}
+		
+	}
+
+
+	}
+
+	// about
+
+	.tours{
+
+		&__grid {
+			grid-template-columns: 1fr ;
+		}
+	}
+
+	// stories
+	.stories {
+
+		.story__card {
+			transform: skewX(0);
+			width: 100%;
+			padding: 1.5rem;
+		}
+
+		.story__content-wrapper  {
+			transform: skewX(0);
+		}
+		}
+
+}
+
+@media (max-width: 550px) {
+	
+	// general selectors
+
+	html	 {
+		font-size: 62.5%;
+	}
+
+	// hero
+
+	.hero {
+		.fa-bars {
+			height: 40px;
+			width: 40px;
+		}
+
+	}
+	// booking
+
+	.booking {
+		padding: 0 !important;
+		&__form {
+			.radio__wrapper {
+				flex-direction: column;
+				gap: .5rem;
+
+				.custom-radio-wrapper {
+					width: 30px;
+					height: 30px;
+				}
+
+				.inner-circle {
+					width: 10px;
+					height: 10px;
+				}
+
+			}
+
+			label[for="small"],
+			label[for="large"] {
+				font-size: 1.5rem !important;
+			}
+
+			.input-wrapper input:focus:invalid { 
+				border-bottom: 2px solid $yellow--dark !important;
+			}
+
+			.input-wrapper input:focus {
+				border-bottom: 2px solid  $primary-clr !important;
+			}
+
+
+		}
+
+	}
+
+	.bookig__btn-wrapper {
+		margin: 0;
+	}
+
+	// tours
+
+	.p-tours {
+		.card-wrapper {
+			width: 100% !important;
+			height: 500px !important;
+		}
+	}
+}
