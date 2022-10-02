@@ -222,7 +222,6 @@
 		}
 
 .advices {
-	margin-bottom: 10rem ;
 	background: linear-gradient(to bottom right, rgba(126,213,111,0.8), rgba(40,180,133,0.8)) , url('../img/nat-4.jpg') center/cover;
 	min-height: 100vh;
 	transform: skewY(-7deg);
@@ -269,7 +268,8 @@
 
 .p-tours {
 	background: $bg-light;
-	margin-top: -16rem;
+	margin-top: -10rem;
+	padding-top: 10rem;
 
 	&__title  {
 		margin-bottom: 3.5rem;
@@ -442,8 +442,6 @@
 }
 
 .story {
-
-
 	&__content-wrapper  {
 		grid-template-columns: 1fr 3fr;
 		gap: 2.5rem;
@@ -531,6 +529,8 @@
 	background: #fff;
 
 	video {
+		display: block;
+		width: 100%;
 		opacity: .15;
 		object-fit: cover;
 	}
@@ -724,11 +724,7 @@
 	}
 
 	&__grid {
-		gap: 2.25rem;
-		width: 100vw;
-		justify-items: space-between;
-		margin: 0 auto;
-		width: 100%;
+		justify-items: center;
 	}
 	&__logo-wrapper  {
 		margin-top: 2.5rem;
